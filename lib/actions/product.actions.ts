@@ -1,7 +1,7 @@
 // the way this works: one actions file for every entity 
 
 'use server';
-import { PrismaClient } from '@prisma/client';
+// import { PrismaClient } from '@prisma/client';
 // import { Prisma } from '@prisma/client';
 import { prisma } from '@/db/prisma';
 import { convertToPlainObject } from '../utils';
