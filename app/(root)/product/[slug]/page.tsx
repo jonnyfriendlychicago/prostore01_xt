@@ -24,7 +24,7 @@ const ProductDetailsPage = async (props: {
           {/* <div className='col-span-2'>Add Images</div> */}
           <div className='col-span-2'>
             <ProductImages images={product.images!} />
-        </div>;
+        </div>
 
           {/* Details Column */}
          <div className='col-span-2 p-5'>
@@ -33,7 +33,7 @@ const ProductDetailsPage = async (props: {
                 {product.brand} {product.category}
               </p>
               <h1 className='h3-bold'>{product.name}</h1>
-              {/* <p>{product.rating} of {product.numReviews} reviews</p> */}
+              <p>{product.rating} of {product.numReviews} reviews</p>
 
                <div className='flex flex-col gap-3 sm:flex-row sm:items-center'>
                   <ProductPrice
@@ -43,7 +43,7 @@ const ProductDetailsPage = async (props: {
               </div>
             </div>
             <div className='mt-10'>
-              <p>Description:</p>
+              <p className='font font-semibold'>Description:</p>
               <p>{product.description}</p>
             </div>
           </div>
@@ -66,7 +66,7 @@ const ProductDetailsPage = async (props: {
                   )}
                 </div>
                 {product.stock > 0 && (
-                  <div className=' flex-center'>
+                  <div className='flex-center'>
                     <Button className='w-full'>Add to cart</Button>
                   </div>
                 )}
