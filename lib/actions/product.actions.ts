@@ -31,7 +31,7 @@ export async function getLatestProducts() {
 
   // Get single product by slug
 export async function getProductBySlug(slug: string) {
-  const prisma = new PrismaClient();
+  // const prisma = new PrismaClient();
   return await prisma.product.findFirst({
     where: { slug: slug },
   });
